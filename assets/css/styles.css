@@ -7,8 +7,8 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --primary-color: #792dd7;
+  --secondary-color: #ffd035;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -45,11 +45,6 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-}
-
-section {
-  /* max-width: 1100px;
-  margin: auto; */
 }
 
 /* CSS Resets end */
@@ -105,14 +100,14 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 5rem;
   max-width: 68.75rem;
   margin: auto;
+  padding: 5rem;
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  width: 40%;
 }
 
 .bio {
@@ -132,23 +127,6 @@ nav ul li {
 }
 /* Hero section ends */
 
-/* More about */
-.more-about {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
-}
-
-.more-about h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-
-.more-about p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
-}
-/* More about ends */
-
 /* Skills section */
 .skills {
   max-width: 68.75rem;
@@ -161,13 +139,25 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-.skills-wrapper img {
+.skills-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-wrapper img{
   padding: 1.25rem;
 }
 
-.icon {
+.child-skill .icon {
   width: 11.875rem;
   height: 11.25rem;
+}
+
+.skill-learning {
+  padding-top: 2rem;
 }
 /* Skills section ends */
 
@@ -187,6 +177,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .projects-title {
@@ -363,7 +354,7 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
+    margin-top: -7rem;
     flex-direction: column;
     gap: 0;
   }
@@ -371,6 +362,7 @@ footer {
   .hero img {
     height: 37.5rem;
     width: 30rem;
+    padding: 4rem;
   }
 
   .bio {
@@ -378,30 +370,9 @@ footer {
     width: 20.5rem;
   }
 
-  .more-about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
-  }
-
-  .more-about h2 {
-    text-align: center;
-  }
-
-  .more-about p {
-    text-align: justify;
-  }
-
   .icon {
     width: 5.875rem;
     height: 5.25rem;
-  }
-
-  .projects-container {
-    flex-direction: column;
-  }
-
-  .project-container {
-    width: 20.875rem;
   }
 
   .contact-form-container {
@@ -410,6 +381,9 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  .hero {
+    margin-top: -12rem;
+  }
   .hero img {
     height: 37.5rem;
     width: 23rem;

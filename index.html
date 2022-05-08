@@ -12,13 +12,13 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+      href="assets/icons/twt-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="assets/icons/twt-icon.png"
     />
 
     <!-- Animate CSS CDN -->
@@ -26,17 +26,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <title>Sunfilis | Developer Portfolio</title>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>JANE DOE</h1>
+      <h1>SUNFILIS</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#projects" class="nav-link">Portfolio</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
@@ -44,45 +44,21 @@
         <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
     </nav>
-    
-    <p> 0024 </p>
 
     <!-- Hero Section -->
     <section class="hero" id="about">
       <img
-        src="assets/images/wfh_1.svg"
-        alt="jane-doe"
+        src="assets/images/avatar.svg"
+        alt="fili-pfp"
         loading="lazy"
         class="hero-img"
       />
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-title">About Me</h2>
         <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
+          My name is Fili and I am an aspiring video game programmer! Currently a university student majoring in Computer Science - Computer Games. Welcome to my portfolio website!
         </p>
       </div>
-    </section>
-
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
     </section>
 
     <!-- Skills section -->
@@ -90,98 +66,132 @@
       <h2 class="skill-header">My Top Skills</h2>
 
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
+        <div class="skills-row animate__animated animate__pulse">
+          <div class="child-skill icon-card">
+            <img
+            src="assets/icons/icons8-java.svg"
+            alt="java"
+            loading="lazy"
+            class="icon"
+            />
+            <p>Java</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
+            src="assets/icons/icons8-python.svg"
+            alt="python"
+            loading="lazy"
+            class="icon"
+            />
+            <p>Python</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
             src="assets/icons/icons8-html-5.svg"
-            alt=""
+            alt="html"
             loading="lazy"
-            class="icon icon-card"
-          />
-          <img
+            class="icon"
+            />
+            <p>HTML</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
             src="assets/icons/icons8-css3.svg"
-            alt=""
+            alt="css"
             loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+            class="icon"
+            />
+            <p>CSS</p>
+          </div>
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
+        <div class="skills-row animate__animated animate__pulse">
+          <div class="child-skill icon-card">
+            <img
+            src="assets/icons/icons8-c-programming.svg"
+            alt="c"
             loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
+            class="icon"
+            />
+            <p>C</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
+            src="assets/icons/icons8-c++.svg"
+            alt="c++"
             loading="lazy"
-            class="icon icon-card"
-          />
-          <img
+            class="icon"
+            />
+            <p>C++</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
             src="assets/icons/icons8-git.svg"
-            alt=""
+            alt="git"
             loading="lazy"
-            class="icon icon-card"
-          />
+            class="icon"
+            />
+            <p>Git</p>
+          </div>
+          <div class="child-skill icon-card">
+            <img
+            src="assets/icons/icons8-github.svg"
+            alt="github"
+            loading="lazy"
+            class="icon"
+            />
+            <p>GitHub</p>
+          </div>
         </div>
       </div>
+
+      <p class="skill-learning"> 
+        Also learning Unity/C# and Javascript
+      </p>
     </section>
 
     <!-- Projects section -->
     <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <h2 class="projects-title">Portfolio</h2>
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
+            src="assets/images/platformer-game.png"
+            alt="platformer-game"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Expense Tracker</h3>
+          <h3 class="project-title">2D Platformer Game</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            A basic 2D platformer game that keeps score and that can be played in your browser.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://play.unity.com/mg/2d/webgl-builds-190091" target="_blank" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
+            src="assets/images/tnt-picker.png"
+            alt="tnt-picker"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Netflix Clone</h3>
+          <h3 class="project-title">Favourite TNT Song Picker</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            A web-responsive website that allows you to rank TNT songs and share your ranking with friends.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://tnt-fun-stuff.glitch.me/picker-shortcodes.html" target="_blank" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
+            src="assets/images/aquadaily.png"
+            alt="aquadaily"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">Greeny Earth</h3>
+          <h3 class="project-title">Aquadaily App</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            A desktop notifier app that gives you hydration reminders and motivational messages.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://github.com/sunfilis/aquadaily-app" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
@@ -191,7 +201,7 @@
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
+          <form action="https://formspree.io/f/xpzbkayo" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
               <input
@@ -239,28 +249,14 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="#" target="_blank"
+      <a href="https://twitter.com/sunfilis" target="_blank"
         ><img
           src="assets/icons/icons8-twitter-circled.gif"
           alt="Twitter"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
+      <a href="https://github.com/sunfilis" target="_blank"
         ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
       /></a>
     </div>
@@ -275,11 +271,13 @@
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">Illustration by <a href="https://icons8.com/illustrations/author/292791">Anna Golde</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+      <p class="copy">Skills icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
       <p class="copy">
         Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
+        <a href="https://twitter.com/sunfilis" target="_blank"
+          >sunfilis</a
         >
       </p>
     </footer>
